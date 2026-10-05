@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ERKLAS Yol Yardım | 7/24 Mobil Lastik Zeytinburnu</title>
+
+<meta name="description" content="ERKLAS Yol Yardım, Zeytinburnu ve çevresinde 7/24 mobil lastik, yerinde lastik tamiri, lastik değişimi, stepne değişimi, çekici ve oto kurtarma hizmeti sunar.">
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #111;
+color: #fff;
+line-height: 1.6;
+}
+
+header {
+background: #090909;
+border-bottom: 1px solid #333;
+padding: 18px 7%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.logo {
+font-size: 22px;
+font-weight: 900;
+letter-spacing: 1px;
+}
+
+.logo span {
+color: #ffc400;
+}
+
+.header-call {
+background: #ffc400;
+color: #111;
+text-decoration: none;
+font-weight: 800;
+padding: 11px 18px;
+border-radius: 8px;
+}
+
+.hero {
+min-height: 82vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 70px 20px;
+background:
+radial-gradient(circle at center, #292929 0%, #111 65%);
+}
+
+.hero-content {
+max-width: 850px;
+}
+
+.badge {
+display: inline-block;
+background: #ffc400;
+color: #111;
+padding: 7px 15px;
+border-radius: 30px;
+font-weight: 800;
+margin-bottom: 22px;
+}
+
+h1 {
+font-size: clamp(38px, 7vw, 72px);
+line-height: 1.05;
+margin-bottom: 20px;
+}
+
+h1 span {
+color: #ffc400;
+}
+
+.hero p {
+font-size: 20px;
+color: #ddd;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-block;
+padding: 16px 25px;
+border-radius: 9px;
+text-decoration: none;
+font-weight: 900;
+font-size: 17px;
+}
+
+.call {
+background: #ffc400;
+color: #111;
+}
+
+.whatsapp {
+background: #25D366;
+color: #071b0d;
+}
+
+.trust {
+background: #ffc400;
+color: #111;
+padding: 18px;
+text-align: center;
+font-weight: 900;
+word-spacing: 5px;
+}
+
+section {
+padding: 75px 7%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.section-title small {
+color: #ffc400;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.section-title h2 {
+font-size: 36px;
+margin-top: 6px;
+}
+
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 18px;
+max-width: 1100px;
+margin: auto;
+}
+
+.card {
+background: #1b1b1b;
+border: 1px solid #333;
+border-radius: 14px;
+padding: 28px;
+}
+
+.card .icon {
+font-size: 35px;
+margin-bottom: 12px;
+}
+
+.card h3 {
+color: #ffc400;
+margin-bottom: 8px;
+font-size: 20px;
+}
+
+.card p {
+color: #ccc;
+}
+
+.towing {
+background: #191919;
+}
+
+.towing-box {
+max-width: 900px;
+margin: auto;
+border-left: 5px solid #ffc400;
+padding: 35px;
+background: #222;
+border-radius: 10px;
+}
+
+.towing-box h2 {
+font-size: 32px;
+margin-bottom: 12px;
+}
+
+.towing-box p {
+color: #ccc;
+margin-bottom: 20px;
+}
+
+.areas {
+max-width: 900px;
+margin: auto;
+text-align: center;
+}
+
+.area-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin-top: 25px;
+}
+
+.area {
+border: 1px solid #444;
+background: #1c1c1c;
+padding: 10px 17px;
+border-radius: 30px;
+}
+
+.contact {
+background: #ffc400;
+color: #111;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 38px;
+margin-bottom: 10px;
+}
+
+.contact p {
+font-size: 18px;
+margin-bottom: 25px;
+}
+
+.contact .call {
+background: #111;
+color: #fff;
+}
+
+footer {
+background: #080808;
+text-align: center;
+color: #aaa;
+padding: 30px 20px 95px;
+}
+
+footer strong {
+color: #fff;
+}
+
+.mobile-actions {
+display: none;
+}
+
+@media (max-width: 650px) {
+header {
+padding: 14px 5%;
+}
+
+.logo {
+font-size: 17px;
+}
+
+.header-call {
+padding: 9px 12px;
+font-size: 14px;
+}
+
+.hero {
+min-height: 75vh;
+padding: 60px 18px;
+}
+
+.hero p {
+font-size: 17px;
+}
+
+section {
+padding: 55px 20px;
+}
+
+.section-title h2 {
+font-size: 29px;
+}
+
+.mobile-actions {
+display: grid;
+grid-template-columns: 1fr 1fr;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 999;
+}
+
+.mobile-actions a {
+padding: 17px 8px;
+text-align: center;
+text-decoration: none;
+font-weight: 900;
+}
+
+.mobile-call {
+background: #ffc400;
+color: #111;
+}
+
+.mobile-whatsapp {
+background: #25D366;
+color: #071b0d;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">ERKLAS <span>YOL YARDIM</span></div>
+<a class="header-call" href="tel:+905462500112">📞 Hemen Ara</a>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="hero-content">
+<div class="badge">7/24 HİZMET</div>
+
+<h1>7/24 <span>Mobil Lastik</span><br>Yol Yardım</h1>
+
+<p>
+Yolda kaldığınız yerde lastik tamiri ve değişimi.
+Zeytinburnu ve çevre ilçelerde 7 gün 24 saat mobil lastik desteği.
+</p>
+
+<div class="buttons">
+<a class="btn call" href="tel:+905462500112">
+📞 0546 250 01 12
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/905462500112?text=Merhaba%20ERKLAS%20Yol%20Yard%C4%B1m%2C%20mobil%20lastik%20hizmeti%20almak%20istiyorum.">
+💬 WhatsApp'tan Yaz
+</a>
+</div>
+</div>
+</section>
+
+<div class="trust">
+7/24 HİZMET • YERİNDE MÜDAHALE • MOBİL LASTİK • İSTANBUL AVRUPA YAKASI
+</div>
+
+<section>
+<div class="section-title">
+<small>ERKLAS YOL YARDIM</small>
+<h2>Mobil Lastik Hizmetleri</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">🛞</div>
+<h3>Yerinde Lastik Tamiri</h3>
+<p>Lastik sorunlarında bulunduğunuz noktaya gelerek yerinde müdahale ediyoruz.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Patlak Lastik Tamiri</h3>
+<p>Yolda patlayan lastiğiniz için 7/24 mobil lastik desteği sağlıyoruz.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h3>Yerinde Lastik Değişimi</h3>
+<p>Aracınızın lastik değişimini bulunduğunuz yerde gerçekleştiriyoruz.</p>
+</div>
+
+<div class="card">
+<div class="icon">⚙️</div>
+<h3>Stepne Değişimi</h3>
+<p>Uygun stepneniz bulunuyorsa lastik değişimine yerinde yardımcı oluyoruz.</p>
+</div>
+
+<div class="card">
+<div class="icon">📍</div>
+<h3>Mobil Lastikçi</h3>
+<p>Servise gitmenize gerek kalmadan mobil lastik hizmetini bulunduğunuz noktaya getiriyoruz.</p>
+</div>
+
+<div class="card">
+<div class="icon">☎️</div>
+<h3>Acil Lastik Yol Yardım</h3>
+<p>Acil lastik sorunlarında 7 gün 24 saat telefonla bize ulaşabilirsiniz.</p>
+</div>
+
+</div>
+</section>
+
+<section class="towing">
+<div class="towing-box">
+<h2>🚘 Oto Kurtarma & Çekici</h2>
+
+<p>
+Lastik hizmetinin yanı sıra yolda kalan araçlar için
+7/24 çekici ve oto kurtarma hizmeti de sunuyoruz.
+</p>
+
+<a class="btn call" href="tel:+905462500112">
+Çekici İçin Ara
+</a>
+</div>
+</section>
+
+<section>
+<div class="areas">
+<div class="section-title">
+<small>HİZMET BÖLGELERİ</small>
+<h2>İstanbul Avrupa Yakası</h2>
+</div>
+
+<p>
+Zeytinburnu ve çevre ilçelerde mobil lastik ve yol yardım hizmeti.
+</p>
+
+<div class="area-list">
+<span class="area">Zeytinburnu</span>
+<span class="area">Kazlıçeşme</span>
+<span class="area">Bakırköy</span>
+<span class="area">Fatih</span>
+<span class="area">Bahçelievler</span>
+<span class="area">Güngören</span>
+<span class="area">Bayrampaşa</span>
+<span class="area">Esenler</span>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<h2>Yolda mı kaldınız?</h2>
+
+<p>
+7/24 mobil lastik, yol yardım ve oto kurtarma için ERKLAS'ı arayın.
+</p>
+
+<a class="btn call" href="tel:+905462500112">
+📞 0546 250 01 12
+</a>
+</section>
+
+</main>
+
+<footer>
+<strong>ERKLAS YOL YARDIM</strong><br>
+7/24 Mobil Lastik • Yol Yardım • Oto Kurtarma & Çekici<br><br>
+Zeytinburnu / İstanbul<br>
+© 2026 ERKLAS Yol Yardım
+</footer>
+
+<div class="mobile-actions">
+<a class="mobile-call" href="tel:+905462500112">📞 HEMEN ARA</a>
+
+<a class="mobile-whatsapp"
+href="https://wa.me/905462500112?text=Merhaba%20ERKLAS%20Yol%20Yard%C4%B1m%2C%20yard%C4%B1m%20almak%20istiyorum.">
+💬 WHATSAPP
+</a>
+</div>
+
+</body>
+</html>
